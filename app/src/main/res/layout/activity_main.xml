@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="net.rodrigobrito.chat_ado.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:text="Apelido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Anônimo"
+        android:ems="10"
+        android:id="@+id/nome" />
+
+    <com.samsao.messageui.views.MessagesWindow
+        android:layout_weight="1"
+        android:id="@+id/chat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:balloonMargins="16dp"
+        android:backgroundTint="@android:color/white"
+        app:thatBalloonBackground="@drawable/msg_in"
+        app:thatBalloonTextColor="@android:color/white"
+        app:thisBalloonBackground="@drawable/msg_out"
+        app:thisBalloonTextColor="@android:color/white"/>
+</LinearLayout>
